@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.nav{
+    position: relative;
+}
+
+.profile-background-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.nav-links{
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.nav-links a{
+    color: whitesmoke;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    font-weight: bold ;
+    background-color: rgba(24, 23, 23, 0.20);
+    border-radius: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4em;
+    margin: 0 4%;
+}
+.nav-links a:hover{
+    background-color: rgba(24, 23, 23, 0.70);
+}
+
+.profile-img{
+    position: absolute;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 50%;
+    left: 3%;
+    bottom: -80px;
+    border: whitesmoke 5px solid;
+}
+.profile-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name{
+    color: whitesmoke;
+    font-family: 'Schoolbell', cursive;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: black 6px 6px 10px;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 50%;
+}
+@media only screen and (min-width: 1200px) {
+  .name{
+      font-size: 100px;
+  }
+}

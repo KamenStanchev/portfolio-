@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <title>Title</title>
+</head>
+<body>
+
+<div class="nav">
+  <img class="profile-background-img" src="{% static 'images/profile-background.jpg' %}">
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact me</a>
+  </div>
+  <div class="profile-img">
+    <img src="{% static 'images/profile-img.jpg' %}">
+  </div>
+  <div class="name">
+    Kamen Stanchev
+  </div>
+</div>
+
+<div class="page_content">
+  {% block page_content %}
+
+  {% endblock %}
+
+</div>
+
+</body>
+</html>
