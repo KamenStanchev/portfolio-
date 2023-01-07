@@ -1,5 +1,9 @@
 {% extends 'main.html' %}
+{% load static %}
+
 
 {% block page_content %}
-  <h2>Hello from App</h2>
+  <div class="home-container">
+    <img src="{% static 'images/body-img-1.jpg' %}">
+  </div>
 {% endblock %}
