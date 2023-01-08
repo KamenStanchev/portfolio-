@@ -4,7 +4,9 @@ body{
 }
 
 .nav{
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .profile-background-img{
@@ -18,7 +20,7 @@ body{
     top: 1rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 
 }
 .nav-links a{
@@ -44,26 +46,30 @@ body{
     min-width: 200px;
     max-width: 300px;
     left: 10%;
-    bottom: -80px;
+    top: 5px;
     z-index: 1;
+    transition: 0.5s;
 }
 .profile-img img{
     width: 100%;
     border-radius: 50%;
     border: whitesmoke 7px solid;
+    transition: 0.8s;
 }
 
 .name{
+    /*display: flex;*/
     color: whitesmoke;
     font-family: 'Schoolbell', cursive;
     font-size: 60px;
     text-align: center;
     text-shadow: black 6px 6px 10px;
     position: absolute;
-    right: 5%;
-    bottom: 10%;
-    width: 50%;
+    right: 5px;
+    bottom: 3%;
+    width: 75%;
     line-height: 1em;
+    transition: 1s;
 }
 
 .page-content{
@@ -111,5 +117,8 @@ footer img{
   }
     .profile-img{
     bottom: -110px;
-}
+    }
+    .nav-links{
+        justify-content: center;
+    }
 }
