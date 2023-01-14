@@ -16,4 +16,6 @@ def projects_list(request):
 
 
 def project_details(request, pk):
-    return render(request, 'project-details.html')
+    project = Project.objects.get(id=pk)
+    contex = {'project': project}
+    return render(request, 'project-details.html', contex)

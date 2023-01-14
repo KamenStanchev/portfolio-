@@ -2,7 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   console.log('from scrollFunction')
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     document.querySelector(".profile-background-img").style.height = "120px";
 
     // document.querySelector(".name").style.fontSize= "30px";

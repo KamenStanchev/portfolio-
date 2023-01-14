@@ -3,19 +3,18 @@
 
 
 {% block page_content %}
-  <h1>Projects:</h1>
+
+
+  <div class="home-container">
+    <span class="title">Projects:</span>
   {% for project in projects %}
-    <div>
+    <div class="projects-container">
       <h3>{{ project.name }}</h3>
       <br>
+      <a href="{% url 'projects-details' project.pk %}"><img class="projects-img hover-img" src="{{ project.project_img.url }}"></a>
+      <br>
       <h4>{{ project.description }}</h4>
-      <br>
-      <a href="{{ project.live_hyperlink }}">Visit webpage</a>
-      <br>
-      <img src="{{ project.project_img.url }}">    
     </div>
   {% endfor %}
-  <div class="home-container">
-    <img src="{% static 'images/body-img-1.jpg' %}">
   </div>
 {% endblock %}
