@@ -24,7 +24,7 @@ function scrollFunction() {
     // document.querySelector(".name").style.fontSize= "60px";
 
     document.querySelector(".profile-img").style.width= "25%";
-    document.querySelector(".profile-img").style.minWidth= "200px";
+    document.querySelector(".profile-img").style.minWidth= "150px";
     document.querySelector(".profile-img").style.left= "6%";
     // document.querySelector(".profile-img").style.bottom= "-110px";
 
