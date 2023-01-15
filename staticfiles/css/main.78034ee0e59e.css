@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background-color: rgb(134, 167, 134);
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.profile-background-img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: 1.5s;
+}
+
+.nav-links{
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+.nav-links a{
+    color: whitesmoke;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    font-weight: bold ;
+    background-color: rgba(24, 23, 23, 0.20);
+    border-radius: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4em;
+    margin: 0 4%;
+}
+.nav-links a:hover{
+    background-color: rgba(160, 154, 154, 0.5);
+}
+
+.profile-img{
+    position: absolute;
+    width: 25%;
+    min-width: 150px;
+    max-width: 300px;
+    left: 6%;
+    top: 5px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.profile-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: whitesmoke 7px solid;
+    transition: 0.8s;
+}
+
+.name{
+    color: whitesmoke;
+    font-family: 'Schoolbell', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: black 6px 6px 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 3%;
+    width: 75%;
+    line-height: 1em;
+    transition: 1s;
+}
+
+.page-content{
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    margin-top: -5px;
+    padding: 0 25% 30px 25%;
+    background-image: url("../images/profile-background.8b23b0a83826.jpg");
+    background-position: right;
+    background-size: cover;
+
+
+}
+footer div{
+    text-align: center;
+    width: 130px;
+    height: 50px;
+}
+footer div:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+footer h3{
+    color: white;
+    font-family: 'Schoolbell', cursive;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: black 1px 1px 0;
+
+}
+footer img{
+    text-shadow: black 5px 5px 5px;
+    width: 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .name{
+      font-size: 70px;
+  }
+    .profile-img{
+    bottom: -110px;
+    }
+    .nav-links{
+        justify-content: center;
+    }
+}
