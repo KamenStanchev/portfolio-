@@ -17,7 +17,7 @@ DEBUG = os.getenv('DEBUG', None) == 'True'
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['']
+CSRF_TRUSTED_ORIGINS = ['https://kamen.up.railway.app']
 
 
 # Application definition
