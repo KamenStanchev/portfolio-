@@ -1,0 +1,51 @@
+.title{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    padding: 1%;
+    color: black;
+    font-family: 'Schoolbell', cursive;
+    font-size: 80px;
+    text-shadow: #414141 6px 6px 5px;
+    transition: 0.5s;
+}
+
+.title-hover:hover{
+    color: blue;
+    font-size: 90px;
+    text-shadow: #5151a6 10px 10px 10px;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.projects-img{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: black 7px 7px 20px;
+}
+
+.projects-container h3{
+    font-family: 'Schoolbell', cursive;
+    font-size: 3.4rem;
+    margin-bottom: 0;
+}
+
+.projects-container h4{
+    max-width: 1300px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.hover-img:hover{
+    box-shadow: black 14px 14px 29px;
+    opacity: 0.8;
+}
